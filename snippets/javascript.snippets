@@ -1,7 +1,6 @@
 # Prototype
 snippet proto
-	${1:class_name}.prototype.${2:method_name} =
-	function(${3:first_argument}) {
+	${1:class_name}.prototype.${2:method_name} = function(${3:first_argument}) {
 		${4:// body...}
 	};
 # Function
@@ -11,14 +10,21 @@ snippet fun
 	}
 # Anonymous Function
 snippet f
-	function(${1}) {${2}};
+	function(${1}) {
+		${2}
+	};
 # if
 snippet if
-	if (${1:true}) {${2}}
+	if (${1:true}) {
+		${2}
+	}
 # if ... else
 snippet ife
-	if (${1:true}) {${2}}
-	else{${3}}
+	if (${1:true}) {
+		${2}
+	}else{
+		${3}
+	}
 # tertiary conditional
 snippet t
 	${1:/* condition */} ? ${2:a} : ${3:b}
@@ -68,16 +74,16 @@ snippet time
 	setTimeout(function() {${3}}${2}, ${1:10};
 # Get Elements
 snippet get
-	getElementsBy${1:TagName}('${2}')${3}
+	getElementsBy${1:TagName}('${2}')${3};
 # Get Element
 snippet gett
-	getElementBy${1:Id}('${2}')${3}
+	getElementBy${1:Id}('${2}')${3};
 # Console Log
 snippet cs
-	console.log("${2} :",${1})
+	console.log("${2} :",${1});
 # Console Time
 snippet cst
-	console.time("${1}")
+	console.time("${1}");
 snippet cc
 	/**
 	 * ${1:description}
@@ -85,4 +91,4 @@ snippet cc
 	 */
 # log('inside coolFunc', this, arguments);
 snippet log
-	log('${1:nome}',this,arguments)
+	log('${1:nome}', this, arguments);
