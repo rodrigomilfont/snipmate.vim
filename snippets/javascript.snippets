@@ -88,7 +88,22 @@ snippet cc
 	/**
 	 * ${1:description}
 	 *
+	 * @param {${2:type}} ${3:subdescription}.
 	 */
 # log('inside coolFunc', this, arguments);
 snippet log
 	log('${1:nome}', this, arguments);
+
+snippet try
+	try {
+	    ${1:function}
+	}catch (e) {
+	console.log(
+	    'E:' + e + '\n' +
+	    'Arquivo   : ' + e.fileName + ' \n ' +
+	    'Linha     : ' + e.lineNumber + ' \n ' +
+	    'Nome      : ' + e.name + ' \n ' +
+	    'Descrição : ' + e.message
+	);
+	}
+
