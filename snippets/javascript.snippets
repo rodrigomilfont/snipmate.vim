@@ -96,7 +96,7 @@ snippet log
 
 snippet try
 	try {
-	    ${1:function}
+	    ${1}
 	}catch (e) {
 	console.log(
 	    'E:' + e + '\n' +
@@ -106,4 +106,7 @@ snippet try
 	    'Descrição : ' + e.message
 	);
 	}
-
+snippet rlog
+	r7.log('${1:nome}', this, arguments);
+snippet rcs
+	r7.log("${2} :",${1});
